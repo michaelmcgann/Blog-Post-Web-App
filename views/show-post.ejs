@@ -1,0 +1,18 @@
+<%- include(`partials/header`)%>
+
+
+<div class="detailed-post-container">
+    <h1 class="detailed-post-title"><%= post.heading %></h1>
+    <div class="detailed-post-content"><%= post.content %></div>
+
+    <div class="post-actions">
+        <button type="button" class="btn-edit postButton" onclick="location.href=`/edit/<%= post.id %>`">Edit</button>
+        <button type="button" class="btn-delete postButton" onclick="location.href=`/delete/<%= post.id %>`">Delete</button>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+

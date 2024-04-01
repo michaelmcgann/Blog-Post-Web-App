@@ -1,0 +1,34 @@
+<%- include(`partials/header`)%>
+
+<h1>Personal Blog</h1>
+
+<div class="button-container">
+    <button class="postButton" onclick="window.location.href='/post';">New Post</button>
+</div>
+
+
+<% posts.slice().reverse().forEach(function(post) { %>
+
+
+    <div class="post-container">
+
+        <a href="/show-post/<%= post.id%>" style="text-decoration: none; color: inherit;">
+
+            <h2 class="post-title"><%= post.heading%></h2>
+
+            <p class="post-content"><%= post.content%></p>
+
+        </a>
+
+        <div class="post-actions">
+            <button type="button" class="btn-edit postButton" onclick="location.href=`edit/<%= post.id %>`">Edit</button>
+            <button type="button" class="btn-delete postButton" onclick="location.href=`delete/<%= post.id %>`">Delete</button>
+        </div>
+    </div>
+
+
+<% }); %>
+
+
+</body>
+</html>

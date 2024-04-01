@@ -1,0 +1,21 @@
+
+<%- include(`partials/header`)%>
+
+
+<div class="container-post">
+    <h1>Create a New Post</h1>
+    <form action="/post" method="POST">
+        <input type="hidden" name="id" value="<%= locals.post ? post.id : `` %>">
+        <div class="form-group">
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" name="title" required value="<%= locals.post ? post.heading : `` %>">
+        </div>
+        <div class="form-group">
+            <label for="postContent">Content:</label>
+            <textarea id="postContent" name="content" rows="10" required><%= locals.post ? post.content : `` %></textarea>
+        </div>
+        <button type="submit" class="btn-submit postButton"><%= locals.post ? `Update` : `Post` %></button>
+    </form>
+</div>
+
+
