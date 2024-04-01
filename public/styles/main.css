@@ -177,21 +177,21 @@ h1 {
 
 @media (max-width: 768px) {
     .post-container, .container-post {
-        margin: 20px 10px; /* Smaller margin on smaller screens */
-        padding: 15px; /* Smaller padding */
-        max-width: 100%; /* Use more of the screen width */
+        margin: 20px 10px;
+        padding: 15px;
+        max-width: 100%;
     }
 
     .post-title, .detailed-post-title {
-        font-size: 1.25rem; /* Slightly smaller titles */
+        font-size: 1.25rem;
     }
 
     .post-content, .detailed-post-content {
-        font-size: 0.9rem; /* Slightly smaller text */
+        font-size: 0.9rem;
     }
 
     .btn-edit, .btn-delete, #postButton {
-        padding: 8px 15px; /* Smaller buttons */
-        font-size: 0.9rem; /* Smaller button text */
+        padding: 8px 15px;
+        font-size: 0.9rem;
     }
 }
