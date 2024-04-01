@@ -174,3 +174,24 @@ h1 {
     color: #fff;
 }
 
+
+@media (max-width: 768px) {
+    .post-container, .container-post {
+        margin: 20px 10px; /* Smaller margin on smaller screens */
+        padding: 15px; /* Smaller padding */
+        max-width: 100%; /* Use more of the screen width */
+    }
+
+    .post-title, .detailed-post-title {
+        font-size: 1.25rem; /* Slightly smaller titles */
+    }
+
+    .post-content, .detailed-post-content {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .btn-edit, .btn-delete, #postButton {
+        padding: 8px 15px; /* Smaller buttons */
+        font-size: 0.9rem; /* Smaller button text */
+    }
+}
